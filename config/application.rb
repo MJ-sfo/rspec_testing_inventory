@@ -1,5 +1,8 @@
 require File.expand_path('../boot', __FILE__)
 
+
+ActiveSupport.halt_callback_chains_on_return_false = false  # part of rails 5 conversion
+
 require "rails"
 # Pick the frameworks you want:
 require "active_model/railtie"
